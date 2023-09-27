@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="author" content="FIT UEF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TẠO AVARTAR - FIT UEF</title>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Progress bar -->
+    <link rel="stylesheet" href="css/nprogress.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">FIT UEF</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="col-sm-8 col-sm-offset-2">
+            <div class="main-content">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <canvas id="final-avatar" height="1024" width="1024"></canvas>
+                    </div>
+                </div>
+                <div class="row avatar-container">
+                    <div class=" text-center">
+                        <div class="col-md-8">
+                            <input type="text" id="avatar-path" class="form-control" value="" placeholder="Chọn hình"
+                                disabled="disabled">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="btn avatar">
+                                <span>Chọn hình</span>
+                                <input id="avatar-btn" type="file" accept="image/*" class="avatar-btn">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row frame-container">
+                    <div class=" text-center">
+                        <div class="col-md-8">
+                            <input type="text" id="avatar-frame-path" class="form-control" value=""
+                                placeholder="Chọn khung hình..." disabled="disabled">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="btn avatar-frame">
+                                <span>Chọn khung hình</span>
+                                <input id="avatar-frame-btn" type="file" accept="image/*" value="logo.png"
+                                    class="avatar-frame-btn">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="footer col-sm-12 text-center">
+                        <div class="col-md-12">
+                            <button id="avatar-generate" type="button" class="btn btn-primary">Tạo Avartar</button>
+                        </div>
+                        <div class="col-md-12">
+                            <button id="avatar-download" type="button" class="btn btn-primary">Tải Avartar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="text-align: center;">
+        <P>HIEUHV@UEF.EDU.VN</P>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/nprogress.min.js"></script>
+    <script src="js/download.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
